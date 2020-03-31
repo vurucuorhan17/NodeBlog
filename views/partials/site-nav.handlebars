@@ -1,0 +1,50 @@
+
+	<nav class="navbar navbar-container navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#00ca76;max-height:120px;">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="/">NODE BLOG</a>
+				
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin: 0px 20px 0px -100px;">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">ANASAYFA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">Hakkında</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/blog">Blog</a>
+					</li>
+					{{#if displayTrue}}
+					<li class="nav-item">
+						<a class="nav-link" href="/posts/new">Gönderi Ekle</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/admin">Admin</a>
+					</li>
+					{{/if}}
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">İletişim</a>
+					</li>
+					{{#unless displayTrue}}
+					<li class="nav-item">
+						<a class="nav-link" href="/users/login">Giriş Yap</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/users/register">Kaydol</a>
+					</li>
+					{{/unless}}
+					{{#if displayTrue}}
+					<li class="nav-item">
+						<a class="nav-link" href="/users/logout">Çıkış Yap</a>
+					</li>
+					{{/if}}
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+

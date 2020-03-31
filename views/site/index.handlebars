@@ -1,0 +1,121 @@
+<div class="" style="margin-top:80px;">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="" class="owl-carousel owl-theme">
+				{{#each posts}}
+				<div>
+					<div class="textoverlay">
+						<h1 style="color:white;text-shadow: 1px 1px black;font-size:x-large;">{{title}}</h1><a
+							href="/posts/{{_id}}"><button class="main-btn">Devamı için tıklayın</button></a>
+					</div><img src="{{post_image}}" width="800" height="500" />
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--==========================
+    WHO WE ARE Section
+============================-->
+
+<section id="about" class="md-padding">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4 offset-md-4">
+				<div class="section-header">
+					<h2 class="title">Blog Özellikleri</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<div class="about">
+					<i class="far fa-user-circle"></i>
+					<h3>Üyelik Sistemi</h3>
+					<hr>
+					
+					<p></p>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+					<div class="about">
+						<i class="fas fa-user-shield"></i>
+						<h3>Admin Paneli</h3>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+			<div class="col-md-4">
+					<div class="about">
+						<i class="far fa-bell"></i>
+						<h3>Bildirim Sistemi</h3>
+						<hr>
+						<p></p>
+				
+					</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<section id="about" class="md-padding">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4 offset-md-4">
+				<div class="section-header">
+					<h2 class="title">Blog Hakkında</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="statement" class="md-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h4 class="text-black lead">NODE BLOG</h4>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<section id="blog" class="md-padding">
+	<div class="container">
+		<div class="row">
+			<main id="main" class="col-md-12">
+				<div class="row">
+					{{#each (limit posts 6)}}
+					<div class="col-md-4">
+						<div class="blog">
+							<div class="blog-img">
+								<img src="{{post_image}}" class="img-fluid">
+							</div>
+							<div class="blog-content">
+								<h3>{{title}}</h3>
+								<p>{{truncate content 120}}</p>
+								<a href="/posts/{{_id}}">Detay için Tıklayın</a>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</main>
+		</div>
+	</div>
+</section>
+
