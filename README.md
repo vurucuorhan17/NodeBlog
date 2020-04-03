@@ -24,5 +24,5 @@ EN:Command to run the project:
 Go to main project folder and run the command: npm run start
 
 
-TR: Not: Projeyi çalıştırabilmeniz için Nodejs ve npm'in kurulu olması gerekmektedir.
+TR: Not: Projeyi çalıştırabilmeniz için Nodejs ve npm'in kurulu olması gerekmektedir.<br/>
 EN: Note: Nodejs and npm must be installed to run the project.
