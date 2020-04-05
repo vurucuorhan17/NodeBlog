@@ -47,6 +47,7 @@ router.get("/posts/edit/:id",(req,res) => {
     Post.findOne({_id:req.params.id}).then(post => {
         Categories.find({}).then(categories => {
             res.render("admin/editpost",{post:post,categories:categories});
+			console.log(post);
         });
     });
     
